@@ -16,7 +16,7 @@ import re
 
 # Get a reference to webcam #0 (the default one)
 try:
-    video_capture = cv2.VideoCapture(0)
+    video_capture = cv2.VideoCapture(-1)
 except:
     print("Your camera is not working , pls fix it to attempt the test ..")
     print("After fixing pls restart the test")
